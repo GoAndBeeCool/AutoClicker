@@ -9,10 +9,9 @@ print('The current pointer position is {0}'.format(
     mouse.position))
 
 # Set pointer position
-# Position should be a user input but right now is hardcoded
-mouse.position = (145, 496)
-print('Now we have moved it to {0}'.format(
-    mouse.position))
+# Pointer should be a user input but right now is hardcoded
+positionX = 145
+positionY = 496
 
 break_program = False
 def on_press(key):
@@ -25,6 +24,7 @@ def on_press(key):
 
 with keyboard.Listener(on_press=on_press) as listener:
     while break_program == False:
+        mouse.position = (positionX, positionY)
         mouse.press(Button.left)
         mouse.release(Button.left)
     listener.join()
