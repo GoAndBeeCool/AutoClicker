@@ -9,7 +9,7 @@ print('The current pointer position is {0}'.format(
     mouse.position))
 
 # Set pointer position
-# Pointer should be a user input but right now is hardcoded
+# Position should be a user input but right now is hardcoded
 mouse.position = (145, 496)
 print('Now we have moved it to {0}'.format(
     mouse.position))
